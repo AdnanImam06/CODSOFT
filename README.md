@@ -1,0 +1,1 @@
+Greetings! I am Adnan Imam, a student of Information Science (MCA) at Presidency University hereby declare that the 3 tasks required for me to complete my Java Programming Internship with CodeSoft is uploaded and is free of plagarism.
