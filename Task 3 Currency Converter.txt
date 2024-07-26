@@ -1,0 +1,54 @@
+Task 3: Currency Converter
+package mypack;
+import java.util.Scanner;
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        System.out.println("1. Rupee");
+        System.out.println("2. Dollar");
+        System.out.println("3. Euro");
+        System.out.println("4. Pound");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose the base currency (enter the corresponding number):");
+        int choice = sc.nextInt();
+        System.out.println("Enter the amount:");
+        double amount = sc.nextDouble();
+        switch (choice) {
+            case 1:
+                rupeeToOther(amount);
+                break;
+            case 2:
+                dollarToOther(amount);
+                break;
+            case 3:
+                euroToOther(amount);
+                break;
+            case 4:
+                poundToOther(amount);
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
+        sc.close();
+    }
+    public static void rupeeToOther(double amount) {
+        System.out.println("Rupee to Dollar: " + amount * 0.013);
+        System.out.println("Rupee to Euro: " + amount * 0.011);
+        System.out.println("Rupee to Pound: " + amount * 0.0097);
+    }
+    public static void dollarToOther(double amount) {
+        System.out.println("Dollar to Rupee: " + amount * 74.85);
+        System.out.println("Dollar to Euro: " + amount * 0.85);
+        System.out.println("Dollar to Pound: " + amount * 0.73);
+    }
+    public static void euroToOther(double amount) {
+        System.out.println("Euro to Rupee: " + amount * 88.12);
+        System.out.println("Euro to Dollar: " + amount * 1.18);
+        System.out.println("Euro to Pound: " + amount * 0.86);
+    }
+    public static void poundToOther(double amount) {
+        System.out.println("Pound to Rupee: " + amount * 102.54);
+        System.out.println("Pound to Dollar: " + amount * 1.37);
+        System.out.println("Pound to Euro: " + amount * 1.16);
+    }
+}
+
